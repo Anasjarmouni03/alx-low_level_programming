@@ -8,17 +8,17 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int A = 0;
-	int B = 0;
+	int l = 0;
+	int x = 0;
 
-	while (*(src + A) != '\0')
+	while (*(src + l) != '\0')
 	{
-		A++;
+		l++;
 	}
-	for ( ; B < A ; B++)
+	for ( ; x < l ; x++)
 	{
-		dest[B] = src[B];
+		dest[x] = src[x];
 	}
-	dest[B] = '\0';
+	dest[l] = '\0';
 	return (dest);
 }
